@@ -4,6 +4,7 @@ from random import randint
 
 age = int(input("Age: "))
 print("You are", age)
+print("You are {}{}".format(age, "!"))
 
 random_number = randint(1, 20)
 
@@ -14,4 +15,5 @@ else:
     years_string = "years"
 
 # later, we will come back to this kind of printing more nicely with string formatting
+print("In", random_number, years_string, ", you will be", age + random_number)
 print("In", random_number, years_string, ", you will be", age + random_number)
