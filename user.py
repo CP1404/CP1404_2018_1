@@ -12,6 +12,9 @@ class User:
     def __str__(self):
         return "{}, {} points, {} tacos left".format(self.name, self.score, self.number_of_tacos)
 
+    def __repr__(self):
+        return self.__str__()
+
     def give_tacos(self, other_user, number_to_give):
         if self.number_of_tacos < number_to_give:
             number_to_give = self.number_of_tacos
