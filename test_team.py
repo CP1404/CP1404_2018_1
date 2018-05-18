@@ -15,7 +15,8 @@ def run_tests():
     team1.add(user1)
     team1.add(user2)
     assert team1.users
-    print(team1.users)
+    # print(team1.users)
+    print(team1)
 
     print(team1.get_leader())
 
